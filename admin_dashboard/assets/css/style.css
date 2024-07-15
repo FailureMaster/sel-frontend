@@ -4559,8 +4559,8 @@ div, ul, ol, span, table {
 }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav {
     width: 6rem;
-    overflow: visible;
-    position: absolute;
+    overflow: scroll;
+    position: fixed;
 }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .nav-text {
     display: none;
@@ -4718,7 +4718,7 @@ div, ul, ol, span, table {
 		z-index: 2;
    }
    [data-layout="vertical"][data-sidebar-style="mini"] .dlabnav {
-		position: absolute;
+		position: fixed;
    }
 	[data-sidebar-style="mini"] .dlabnav .copyright, [data-sidebar-style="mini"] .dlabnav .plus-box {
 		display: none;
