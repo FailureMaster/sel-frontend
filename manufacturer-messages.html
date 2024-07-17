@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	
+	<title>Manufacturer Messages - Selai Sourcing Inc.</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FAVICONS ICON -->
+	<link rel="icon"  type="image/png" sizes="16x16" href="assets/images/selai-favicon.png">
+   
+	<!-- ICONS -->
+	<link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/icons/line-awesome/css/line-awesome.min.css"> 
+	<link rel="stylesheet" href="assets/icons/flaticon/flaticon.css">
+	<link rel="stylesheet" href="assets/icons/flaticon_1/flaticon_1.css">
+	<link rel="stylesheet" href="assets/icons/themify-icons/css/themify-icons.css">
+
+	<!-- NICE SELECT -->
+	<link href="assets/vendor/niceselect/css/nice-select.css" rel="stylesheet">
+	<link href="assets/vendor/flatpickr-master/css/flatpicker.css" rel="stylesheet">
+
+	<!-- STYLE CSS -->
+	<link href="assets/css/style.css" rel="stylesheet">	
+
+	<style>
+		html, body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+	</style>
+	
+</head>
+
+<body class="selection:text-white selection:bg-primary">
+
+   <!-- Main wrapper start -->
+    <div id="main-wrapper" class="relative">
+
+        <!-- Nav header start -->
+		<div class="nav-header">
+			<a href="#" class="brand-logo">
+				<img class="logo-abbr" src="assets/images/selai-sourcing-logo-1.png" alt="Selai Sourcing Logo">
+				<img class="brand-title" src="assets/images/selai-sourcing-logo-text.png" alt="Selai Sourcing Text">
+			</a>
+			<div class="nav-control">
+				<div class="hamburger">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+		</div>
+        <!-- Nav header end -->
+		
+		<!-- Header start -->
+		<div class="header">
+			<div class="header-content">
+				<nav class="navbar navbar-expand">
+					<div class="navbar-collapse justify-between">
+
+						
+						<div class="header-left">
+	
+							<!-- Header Title -->
+							<div class="dashboard_bar max-md:hidden">
+								Messages
+							</div>
+
+							<!-- Header Search -->
+							<div class="nav-item flex items-center">
+								<form action="#">
+									<div class="input-group search-area input-group search-area flex flex-wrap items-stretch relative max-xl:hidden ltr:ml-28 rtl:mr-28">
+										<input type="text" class="form-control py-1.5 px-5 h-[2.813rem] text-sm placeholder-ph text-ph outline-none w-[1%] flex-auto rounded-s-lg rounded-e-none" placeholder="Search">
+										<span class="input-group-text min-w-[3.125rem] justify-center flex items-center text-sm py-[.4rem] px-3 leading-[1.5] text-center rounded-e-lg"><button type="submit" class="btn scale-[1.4]"><i class="flaticon-381-search-2"></i></button></span>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<ul class="navbar-nav header-right flex h-full">
+
+							<!-- Header Message Icon -->
+							<li class="nav-item flex items-center h-full relative ltr:sm:pl-4 ltr:pl-[.4rem] rtl:sm:pr-4 rtl:pr-[.4rem] notification_dropdown">
+								<a class="nav-link relative rounded-full p-[15px] max-xxl:p-2.5 leading-[1] text-lg bell bell-link" href="javascript:void(0)">
+									<svg xmlns="http://www.w3.org/2000/svg" class="size-5" width="24" height="22.871" viewBox="0 0 24 22.871">
+										<g  data-name="Layer 2" transform="translate(-2 -2)">
+										<path id="Path_9" data-name="Path 9" d="M23.268,2H4.73A2.733,2.733,0,0,0,2,4.73V17.471A2.733,2.733,0,0,0,4.73,20.2a.911.911,0,0,1,.91.91v1.94a1.82,1.82,0,0,0,2.83,1.514l6.317-4.212a.9.9,0,0,1,.5-.153h4.436a2.742,2.742,0,0,0,2.633-2L25.9,5.462A2.735,2.735,0,0,0,23.268,2Zm.879,2.978-3.539,12.74a.915.915,0,0,1-.88.663H15.292a2.718,2.718,0,0,0-1.514.459L7.46,23.051v-1.94a2.733,2.733,0,0,0-2.73-2.73.911.911,0,0,1-.91-.91V4.73a.911.911,0,0,1,.91-.91H23.268a.914.914,0,0,1,.879,1.158Z" transform="translate(0 0)"/>
+										<path id="Path_10" data-name="Path 10" d="M7.91,10.82h4.55a.91.91,0,1,0,0-1.82H7.91a.91.91,0,1,0,0,1.82Z" transform="translate(-0.45 -0.63)"/>
+										<path id="Path_11" data-name="Path 11" d="M16.1,13H7.91a.91.91,0,1,0,0,1.82H16.1a.91.91,0,1,0,0-1.82Z" transform="translate(-0.45 -0.99)"/>
+										</g>
+									</svg>
+									<span class="badge rounded-full absolute text-[0.7rem] ltr:right-0 rtl:left-0 shadow-[0_0_5px_0_rgba(0,0,0,0.1)] top-0 size-[1.3rem] leading-[1.3rem] text-center ">2</span>
+								</a>
+							</li>
+
+							<!-- Notification Icon -->
+							<li class="nav-item flex items-center h-full relative ltr:sm:pl-4 ltr:pl-[.4rem] rtl:sm:pr-4 rtl:pr-[.4rem] notification_dropdown" x-data="{ open: false }">
+								<a @click="open = true" class="nav-link relative rounded-full p-[15px] max-xxl:p-2.5 leading-[1] text-lg ai-icon" href="javascript:void(0)">
+									<svg xmlns="http://www.w3.org/2000/svg" class="size-5" width="24" height="24" viewBox="0 0 24 24">
+										<g  data-name="Layer 2" transform="translate(-2 -2)">
+										<path id="Path_20" data-name="Path 20" d="M22.571,15.8V13.066a8.5,8.5,0,0,0-7.714-8.455V2.857a.857.857,0,0,0-1.714,0V4.611a8.5,8.5,0,0,0-7.714,8.455V15.8A4.293,4.293,0,0,0,2,20a2.574,2.574,0,0,0,2.571,2.571H9.8a4.286,4.286,0,0,0,8.4,0h5.23A2.574,2.574,0,0,0,26,20,4.293,4.293,0,0,0,22.571,15.8ZM7.143,13.066a6.789,6.789,0,0,1,6.78-6.78h.154a6.789,6.789,0,0,1,6.78,6.78v2.649H7.143ZM14,24.286a2.567,2.567,0,0,1-2.413-1.714h4.827A2.567,2.567,0,0,1,14,24.286Zm9.429-3.429H4.571A.858.858,0,0,1,3.714,20a2.574,2.574,0,0,1,2.571-2.571H21.714A2.574,2.574,0,0,1,24.286,20a.858.858,0,0,1-.857.857Z"/>
+										</g>
+									</svg>
+									<span class="badge rounded-full absolute text-[0.7rem] ltr:right-0 rtl:left-0 shadow-[0_0_5px_0_rgba(0,0,0,0.1)] top-0 size-[1.3rem] leading-[1.3rem] text-center">18</span>
+								</a>
+								<div class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[310px] pb-4 mt-0.5 top-full sm:right-0 max-sm:right-full max-sm:translate-x-[20%] rounded-lg bg-card" x-transition.duration.100ms x-show.transition.origin.top.right="open" x-cloak @click.away="open = false">
+									<div id="DzNotificationDropdown" class="widget-media dz-scroll overflow-y-scroll overflow-x-hidden relative p-4" style="height:380px;">
+										<ul class="timeline">
+											<li>
+												<div class="timeline-panel flex items-center pb-[15px] mb-[15px] border-b border-border">
+													<div class="media flex items-center justify-center size-[45px] rounded-xl text-lg text-center overflow-hidden font-bold ltr:mr-2 rtl:ml-2">
+														<img alt="image" width="50" src="https://placehold.co/150x150">
+													</div>
+													<div class="flex-1">
+														<h6 class="mb-1">John Doe Request</h6>
+														<small class="block text-body-text">8 July 2024 - 08:00 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel flex items-center pb-[15px] mb-[15px] border-b border-border">
+													<div class="media flex items-center justify-center size-[45px] rounded-xl text-lg text-center overflow-hidden font-bold ltr:mr-2 rtl:ml-2 text-info bg-info-light">
+														JD
+													</div>
+													<div class="flex-1">
+														<h6 class="mb-1">John Doe product</h6>
+														<small class="block text-body-text">8 July 2024 - 08:00 PM</small>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-panel flex items-center pb-[15px] mb-[15px] border-b border-border">
+													<div class="media flex items-center justify-center size-[45px] rounded-xl text-lg text-center overflow-hidden font-bold ltr:mr-2 rtl:ml-2 text-primary bg-primary-light">
+														<i class="fa fa-home"></i>
+													</div>
+													<div class="flex-1">
+														<h6 class="mb-1">New Quotation</h6>
+														<small class="block text-body-text">8 July 2024 - 08:00 PM</small>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<a class="dropdown-item pt-[15px] px-[30px] text-center block border-t border-border text-primary" href="javascript:void(0)">See all notifications <i class="ti-arrow-right ltr:ml-2 rtl:mr-2.5 font-black"></i></a>
+								</div>
+							</li>
+
+							<!-- Settings Icon -->
+							<li class="nav-item flex items-center h-full relative ltr:sm:pl-4 ltr:pl-[.4rem] rtl:sm:pr-4 rtl:pr-[.4rem] notification_dropdown" x-data="{ open: false }">
+								<a class="nav-link relative rounded-full p-[15px] max-xxl:p-2.5 leading-[1] text-lg ai-icon" href="javascript:void(0)">
+									<svg xmlns="http://www.w3.org/2000/svg" class="size-5" width="23.262" height="24" viewBox="0 0 23.262 24">
+										<g id="icon" transform="translate(-1565 90)">
+										<path id="setting_1_" data-name="setting (1)" d="M30.45,13.908l-1-.822a1.406,1.406,0,0,1,0-2.171l1-.822a1.869,1.869,0,0,0,.432-2.385L28.911,4.293a1.869,1.869,0,0,0-2.282-.818l-1.211.454a1.406,1.406,0,0,1-1.88-1.086l-.213-1.276A1.869,1.869,0,0,0,21.475,0H17.533a1.869,1.869,0,0,0-1.849,1.567L15.47,2.842a1.406,1.406,0,0,1-1.88,1.086l-1.211-.454a1.869,1.869,0,0,0-2.282.818L8.126,7.707a1.869,1.869,0,0,0,.432,2.385l1,.822a1.406,1.406,0,0,1,0,2.171l-1,.822a1.869,1.869,0,0,0-.432,2.385L10.1,19.707a1.869,1.869,0,0,0,2.282.818l1.211-.454a1.406,1.406,0,0,1,1.88,1.086l.213,1.276A1.869,1.869,0,0,0,17.533,24h3.943a1.869,1.869,0,0,0,1.849-1.567l.213-1.276a1.406,1.406,0,0,1,1.88-1.086l1.211.454a1.869,1.869,0,0,0,2.282-.818l1.972-3.415a1.869,1.869,0,0,0-.432-2.385ZM27.287,18.77l-1.211-.454a3.281,3.281,0,0,0-4.388,2.533l-.213,1.276H17.533l-.213-1.276a3.281,3.281,0,0,0-4.388-2.533l-1.211.454L9.75,15.355l1-.822a3.281,3.281,0,0,0,0-5.067l-1-.822L11.721,5.23l1.211.454A3.281,3.281,0,0,0,17.32,3.151l.213-1.276h3.943l.213,1.276a3.281,3.281,0,0,0,4.388,2.533l1.211-.454,1.972,3.414h0l-1,.822a3.281,3.281,0,0,0,0,5.067l1,.822ZM19.5,7.375A4.625,4.625,0,1,0,24.129,12,4.63,4.63,0,0,0,19.5,7.375Zm0,7.375A2.75,2.75,0,1,1,22.254,12,2.753,2.753,0,0,1,19.5,14.75Z" transform="translate(1557.127 -90)"/>
+										</g>
+									</svg>
+									<span class="badge rounded-full absolute text-[0.7rem] ltr:right-0 rtl:left-0 shadow-[0_0_5px_0_rgba(0,0,0,0.1)] top-0 size-[1.3rem] leading-[1.3rem] text-center ">!</span>
+								</a>
+						
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+        <!-- Header end -->
+
+        <!-- Sidebar start -->
+		<div class="dlabnav">
+			<div class="dlabnav-scroll">
+				<div class="dropdown header-profile2" x-data="{ open: false }">
+
+					<a class="nav-link " href="javascript:void(0);"  @click="open = true">
+						<div class="header-info2 flex items-center">
+
+							<!-- Sidebar Current User Image -->
+							<img src="https://placehold.co/200x200" alt="" class="size-[2.8rem] rounded-md ltr:mr-[.8rem] rtl:ml-[.8rem]">
+							
+							<!-- Sidebar Current User Info -->
+							<div class="flex items-center sidebar-info flex-1">
+								<div>
+									<span class="block font-medium text-[15px]">Joseph Doe</span>
+									<small class="text-xs">Manufacturer</small>
+								</div>	
+								<i class="fas fa-chevron-down ltr:ml-auto rtl:mr-auto"></i>
+							</div>
+
+						</div>
+					</a>
+
+					<!-- Sidebar Current User Dropdown -->
+					<div class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[15rem] py-[15px] mt-0.5 ltr:ml-3 rtl:mr-3 rounded-lg bg-card" x-transition.duration.100ms x-show.transition.origin.top.right="open" x-cloak  @click.away="open = false">
+						<a href="#" class="dropdown-item block text-left w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+							<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+							<span class="ltr:ml-2 rtl:mr-2">Profile </span>
+						</a>
+						<a href="#" class="dropdown-item block text-left w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+							<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+							<span class="ltr:ml-2 rtl:mr-2">Logout </span>
+						</a>
+					</div>
+
+				</div>
+
+				<!-- Sidebar Navbar Menu -->
+				<ul class="metismenu" id="menu">
+					<li>
+						<a href="javascript:void()" class="" aria-expanded="false">
+							<i class="fa-solid fa-house"></i>
+							<span class="nav-text">Post</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="javascript:void()" class="" aria-expanded="false">
+							<i class="fa-solid fa-puzzle-piece"></i>
+							<span class="nav-text">My Quotation</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="" class="mm-active" aria-expanded="false">
+							<i class="fa-solid fa-comments"></i>
+							<span class="nav-text">Messages</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="javascript:void()" class="" aria-expanded="false">
+							<i class="fa-solid fa-receipt"></i>
+							<span class="nav-text">Transactions</span>
+						</a>
+					</li>
+
+				</ul>
+				
+			</div>
+		</div>	
+        <!-- Sidebar end -->
+		
+		<!-- Content body start -->
+		<div class="content-body h-full" style="height: 100vh !important;">
+            <!-- row -->
+
+			<div class="container-fluid p-0 h-full">
+
+				<div class="border-b border-border py-[15px] px-[25px] bg-card shadow flex max-md:block flex-wrap justify-between items-center">
+					
+					<div class="w-full flex flex-wrap justify-between items-center">
+						<div>
+							<p class="text-dark text-xl font-bold mt-1">All</p>
+							<span class="text-body-text">351 Messages, 8</span>
+						
+						</div>
+						<div class="sm:mt-0 mt-4">
+							<a href="javascript:void(0);" class="py-[0.579rem] px-4 rounded-md text-white bg-primary border border-primary duration-500 hover:bg-hover-primary text-[13px] font-medium inline-block">
+								<i class="fa-solid fa-plus ltr:mr-1 "></i>
+								New Chat
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- row -->
+				<div class="row h-full">
+                    <div class="w-full">
+                        <div class="card rounded-none">
+                            <div class="flex-auto">
+
+								<div class="row h-full">
+
+									<!-- /column -->
+									<div class="w-1/4 sm:w-1/3 md:w-1/3 xl:w-1/4 email-left-body pr-0">
+										
+										<div class="mb-4 sm:mt-0">
+											
+											<div class="px-4 py-4">
+												
+												<form action="#">
+													<div class="input-group search-area input-group search-area flex flex-wrap items-stretch relative">
+														<input type="text" class="form-control py-1.5 px-5 h-[2.813rem] text-sm placeholder-ph text-ph outline-none w-[1%] flex-auto rounded-e-none" placeholder="Search Messages">
+														<span class="input-group-text min-w-[3.125rem] justify-center flex items-center text-sm py-[.4rem] px-3 leading-[1.5] text-center rounded-e-md"><button type="submit" class="btn scale-[1.4]"><i class="flaticon-381-search-2"></i></button></span>
+													</div>
+												</form>
+
+											</div>
+
+											<div class="contacts_body style-1 p-0 dz-scroll overflow-y-scroll overflow-x-hidden relative" id="">
+												<ul class="contacts">
+
+													<li class="py-1 px-4 bg-body sticky z-[1] top-0 font-bold text-dark border-b border-border cursor-pointer">PINNED</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=NA" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Narcisse Adeoti</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">perfect!</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">9:15</p>
+																	<span class="inline-block font-semibold text-xs py-0 px-1 min-w-[20px] text-center border border-transparent rounded-full text-white bg-primary badge-xs">2</span>
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=SK" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Shira Klein</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">Haha that's terrifying</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">7:15</p>
+																	<span>
+																		<img src="assets/images/messages/messages_sent_icon_2.png" alt="">
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+
+													<li class="py-1 px-4 bg-body sticky z-[1] top-0 font-bold text-dark border-b border-border cursor-pointer">ALL</li>
+													
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=DV" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">David Vasseho</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">woohoooo</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">8:12</p>
+																	<span class="inline-block font-semibold text-xs py-0 px-1 min-w-[20px] text-center border border-transparent rounded-full text-white bg-primary badge-xs">2</span>
+																</div>
+															</div>
+														</div>
+
+													</li>
+
+													
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=BA" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Bahtiyar Aydin</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">just ideas for next time</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">7:28</p>
+																	<span>
+																		&nbsp;
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=BA" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Anita Azonde</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">I'll be there in 2 mins</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">4.51</p>
+																	<span>
+																		&nbsp;
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=BK" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Bruno Kpankon</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">How are you?</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">9:27</p>
+																	<span>
+																		<img src="assets/images/messages/messages_sent_icon_2.png" alt="">
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=RC" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Ren Chin-chih</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">Wow, this is really epic</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">6:46</p>
+																	<span>
+																		&nbsp;
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+
+													<li class="border-b border-border py-[7px] px-4 cursor-pointer hover:bg-[#f4f7ff] dark:hover:bg-[#17171E]">
+														
+														<div class="flex items-center bd-highlight">
+															<div class="img_cont flex items-center justify-center size-10 bg-[#eee] rounded-full text-[13px] text-center font-semibold self-start ltr:mr-2 rtl:ml-2.5 relative">
+																<img src="https://placehold.co/150X150?text=BK" class="rounded-full w-full" alt="">
+															</div>
+
+															<div class="messages_chat_infos flex-grow">
+																<span class="text-dark xl:text-[15px] mb-[5px] block font-medium leading-[1.2]">Charbel Acladje</span>
+																<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">omg, this is amazing</p>
+															</div>
+
+															<div class="absolute messages_chat_notifs">
+																<div class="flex flex-col items-end">
+																	<p class="text-[0.8125rem] text-body-text leading-[1.2] text-ellipsis">3:37</p>
+																	<span>
+																		<img src="assets/images/messages/messages_sent_icon_2.png" alt="">
+																	</span>
+																	
+																</div>
+															</div>
+														</div>
+														
+													</li>
+		
+												</ul>
+											</div>
+
+										</div>
+
+									</div>
+
+									
+									<!-- /column -->
+									<div class="w-full sm:w-2/3 md:w-2/3 xl:w-3/4 messages-right-body pl-0">
+
+										<div class="media border-b border-border items-start pt-4 px-4 flex block justify-between border-l border-border">
+											
+											<div class="clearfix mb-4 flex items-center">
+												<div class="email-tools-box sm:hidden inline-block size-10 leading-10 text-primary rounded-lg text-center duration-300">
+													<i class="fas fa-chevron-left"></i>
+												</div>
+
+												<img class="ltr:mr-3 size-12 rounded-full" alt="image" src="https://placehold.co/150X150?text=BA">
+												
+												<div class="media-body ltr:mr-2 rtl:ml-2">
+													<h5 class="text-primary mb-0">Bahtiyar Aydin</h5>
+													<p>bahtiyar@mail.com</p>
+												</div>
+											</div>
+
+											<div class="clearfix mb-4 flex items-center">
+	
+												<a href="javascript:void(0);" class="p-[7px] text-primary duration-300 hover:bg-primary hover:text-white rounded-full leading-5 my-1 inline-block ltr:mr-2 rtl:ml-2"><i class="fas fa-search fa-lg"></i> </a>
+												
+												<div class="dropdown inline-block" x-data="{ open: false }">
+
+													<a href="javascript:void(0);" class="btn-primary light p-[7px] text-primary rounded-full dz-dropdown duration-300 hover:bg-primary hover:text-white leading-5 my-1 inline-block" @click="open = true">
+														<i class="fas fa-ellipsis-h fa-lg"></i>
+													</a>
+													
+													<ul x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false" class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 right-0 mt-2.5 rounded-xl bg-card">
+														<li class="dropdown-item py-2 px-5 block text-left whitespace-nowrap w-full text-body-text hover:bg-bs-dropdown-color dark:hover:text-white">
+															<i class="fa fa-user-circle text-primary ltr:mr-2 rtl:ml-2"></i> 
+															View profile
+														</li>
+														<li class="dropdown-item py-2 px-5 block text-left whitespace-nowrap w-full text-body-text hover:bg-bs-dropdown-color dark:hover:text-white">
+															<i class="fa fa-users text-primary ltr:mr-2 rtl:ml-2"></i>
+															 Add to Pinned
+														</li>
+														
+													</ul>
+												</div>
+		
+											</div>
+										</div>
+
+										<div class="relative w-full p-4 overflow-y-auto">
+
+											<ul class="space-y-2  messages_chat_view style-1">
+
+												<li class="flex justify-start">
+													<div class="message user ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-4 sm:text-sm text-xs relative text-primary bg-primary-light border border-primary-light">
+														Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque orci nisl.
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+										
+												<li class="flex justify-end">
+													<div class="message client ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-4 sm:text-sm text-xs relative border border-transparent bg-primary text-white">
+														Lorem ipsum dolor sit amet 😭
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+												<li class="py-1 px-4 text-center mb-4 font-bold text-dark">TODAY</li>
+												
+												<li class="flex justify-start">
+													<div class="message user ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-2 sm:text-sm text-xs relative text-primary bg-primary-light border border-primary-light">
+														Aenean sed placerat nisi.
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+										
+												<li class="flex justify-start">
+													<div class="message user ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-4 sm:text-sm text-xs relative text-primary bg-primary-light border border-primary-light">
+														Nullam hendrerit erat et elit mattis, in aliquam massa vehicula.
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+										
+												<li class="flex justify-end">
+													<div class="message client ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-4 sm:text-sm text-xs relative border border-transparent bg-primary text-white">
+														Sed nec nisl at libero mattis dapibus sit amet vel ipsum.
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+										
+												<li class="flex justify-start">
+													<div class="message user ltr:pl-[1.2rem] rtl:pl-12 rtl:pr-[1.2rem] py-3 mb-4 sm:text-sm text-xs relative text-primary bg-primary-light border border-primary-light">
+														Vestibulum id semper diam.
+														<span class="timestamp">7.15 <span> <i class="fas fa-check-double"></i> </span></span>
+													</div>
+												</li>
+
+								
+											</ul>
+										</div>
+										
+										<div class="mx-4">
+											<div class="flex items-stretch border border-border rounded-xl p-2 flex-wrap relative w-full mb-4 message_user_input_box">
+												<input type="text" class="flex-1 w-[1%] relative text-[13px] h-[2.813rem] text-body-text block rounded-s-md py-[5px] px-5 duration-500 focus:border-primary-5 outline-none" placeholder="Type something...">
+												<span class="flex items-center justify-center py-[0.532rem] px-2 text-sm font-normal text-center whitespace-nowrap min-w-[3.125rem] text-white rounded-none ltr:ml-[-1px] rtl:mr-[-1px]">
+													<img src="assets/images/messages/message_emote_icon.png" alt="">
+												</span>
+												<span class="flex items-center justify-center py-[0.532rem] px-2 text-sm font-normal text-center whitespace-nowrap min-w-[3.125rem] text-white rounded-none ltr:ml-[-1px] rtl:mr-[-1px]">
+													<img src="assets/images/messages/message_attachments_icon.png" alt="">
+												</span>
+												<span class="flex items-center justify-center py-[0.532rem] px-2 text-sm font-normal text-center whitespace-nowrap min-w-[3.125rem] text-white rounded-none ltr:ml-[-1px] rtl:mr-[-1px]">
+													<img src="assets/images/messages/messages_mic_icon.png" alt="">
+												</span>
+												<button class="inline-block rounded-e-md min-w-[3.125rem] h-[2.813rem] px-3 font-medium text-primary duration-300 message_user_send_icon" type="button">
+													<img src="assets/images/messages/messages_send_icon.png" alt="">
+												</button>
+											</div>
+
+							
+										</div>
+
+									
+									</div>
+
+
+									
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+		
+
+        </div>
+         <!-- Content body end -->
+
+		<!-- Footer start -->
+        <div class="footer mt-4 bg-card">
+			<div class="copyright p-[15px]">
+			<p class="text-center text-gray sm:text-sm text-xs leading-[1.8]">Selai Sourcing Inc.</p>
+			</div>
+		</div>
+        <!-- Footer end -->
+
+	</div>
+    <!-- Main wrapper end -->
+
+	<script src="assets/vendor/global/global.min.js"></script>
+
+	<!-- Alpine js -->
+	<script defer src="assets/vendor/alpine/alpineplugin.js"></script>
+	<script defer src="assets/vendor/alpine/alpine.js"></script>
+
+	<script src="assets/vendor/niceselect/js/jquery.nice-select.min.js"></script> <!-- nice-select -->
+	
+	<script src="assets/vendor/flatpickr-master/js/flatpickr.js"></script>
+	<script src="assets/js/dlabnav-init.js"></script>
+	<script src="assets/js/custom.min.js"></script>
+
+	<script src="assets/vendor/dropzone/dist/dropzone.js"></script>
+	
+	<script>
+		$(".fa.fa-star").click(function () {
+		  	$(this).toggleClass("yellow");
+		});
+		$(".email-tools-box").on('click', function(){
+			$(' .email-left-body ,.email-tools-box').toggleClass("active");
+	  	});
+	</script>
+
+</body>
+</html>
