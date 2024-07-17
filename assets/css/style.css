@@ -6376,7 +6376,7 @@ div, ul, ol, span, table {
 	line-height: 1rem;
 }
 .nice-select span.current {
-  display: block;
+  /* display: block; */
   overflow: hidden;
   text-overflow: ellipsis;
 }
