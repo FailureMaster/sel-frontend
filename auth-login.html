@@ -37,13 +37,13 @@
                 <div class="flex flex-wrap items-center justify-center lg:justify-between bg-white rounded-lg py-8">
 
                     <!-- Left column container with image -->
-                    <div class="mb-12 md:mb-0 md:w-8/12 lg:w-6/12 p-8">
+                    <div class="mb-12 md:mb-0 md:w-8/12 lg:w-6/12 p-8 hide-on-mobile">
                         <img src="assets/images/login-bg.png" class="w-full" alt="Selai Login Logo" />
                     </div>
 
                     <!-- Right column container with form -->
-                    <div class="md:w-8/12 lg:ms-6 lg:w-5/12">
-                        <div class="relative max-w-lg md:mx-auto mx-6 w-full flex flex-col justify-center p-6">
+                    <div class="ms-0 xl:ms-6 xl:w-5/12">
+                        <div class="relative max-w-lg md:mx-auto w-full flex flex-col justify-center p-6">
 
                             <div class="text-start mb-7">
                                 <a class='grow block mb-8 mt-4' href='#'>
@@ -57,7 +57,7 @@
 
                             <form class="text-start w-full">
                                 <div class="mb-4">
-                                    <input class="block w-full rounded-xl py-4 px-6 text-dark text-base font-medium border-gray-200 focus:gray-200 focus:border-primary focus:outline-0 focus:ring-0 placeholder:text-light placeholder:text-base" type="text" placeholder="Username">
+                                    <input class="block w-full rounded-xl py-4 px-6 text-dark text-base font-medium border-gray-200 focus:red-200 focus:border-primary focus:outline-0 focus:ring-0 placeholder:text-light placeholder:text-base" type="text" placeholder="Username">
                                 </div>
 
                                 <div class="mb-4">
@@ -76,8 +76,6 @@
                                         <input type="checkbox" id="checkbox-signin" class="h-4 w-4 text-base rounded border-gray-200 text-primary focus:ring focus:ring-default-950/30 focus:ring-offset-0">
                                         <label class="text-base ms-2 text-light font-medium align-middle select-none" for="checkbox-signin">Remember me</label>
                                     </div>
-
-                                    <!-- <a class='text-base text-dark' href='auth-recoverpw.html'><small>Forgot your password?</small></a> -->
 
                                 </div>
 
