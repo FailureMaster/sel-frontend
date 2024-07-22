@@ -12577,3 +12577,49 @@ div.dt-buttons {
   right: 1px;
   top: 6px;
 }
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .manufacter_post_info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .manufacter_post_info span {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .manufacter_post_info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .manufacter_post_info span {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+  .text-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .text-start span {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 407px) {
+  .manufacturer_post_open_button a {
+    width: 100%;
+    text-align: center;
+    margin-right: 0; /* To reset margin for the first button */
+    margin-left: 0;  /* To reset margin for the first button */
+    margin-bottom: 10px; /* Optional: To add spacing between buttons */
+  }
+  .manufacturer_post_open_button a:last-child {
+    margin-bottom: 0; /* Remove margin for the last button */
+  }
+}
