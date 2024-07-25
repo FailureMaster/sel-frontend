@@ -1475,6 +1475,9 @@ p{
     width: 100% !important;
     margin-left: 0px !important;
   }
+  .login-body-div {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px){

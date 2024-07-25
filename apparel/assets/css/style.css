@@ -12577,3 +12577,14 @@ div.dt-buttons {
   right: 1px;
   top: 6px;
 }
+
+@media (min-width: 380px) and (max-width: 575px) {
+  .text-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  } 
+  .text-start span {
+    margin-bottom: 0;
+  }
+}

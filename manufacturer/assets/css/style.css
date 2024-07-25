@@ -12604,7 +12604,7 @@ div.dt-buttons {
   .text-start {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   } 
   .text-start span {
     margin-bottom: 0;
@@ -12615,11 +12615,11 @@ div.dt-buttons {
   .manufacturer_post_open_button a {
     width: 100%;
     text-align: center;
-    margin-right: 0; /* To reset margin for the first button */
-    margin-left: 0;  /* To reset margin for the first button */
-    margin-bottom: 10px; /* Optional: To add spacing between buttons */
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
   }
   .manufacturer_post_open_button a:last-child {
-    margin-bottom: 0; /* Remove margin for the last button */
+    margin-bottom: 0;
   }
 }
