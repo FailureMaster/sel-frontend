@@ -12588,3 +12588,21 @@ div.dt-buttons {
     margin-bottom: 0;
   }
 }
+
+.vertical_table table {
+  border-collapse: separate !important;
+}
+.vertical_table table th, .vertical_table table td {
+  height: 50px;
+
+}
+.vertical_table table .vertical_table_title {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  border-right: 1px solid #e6e6e6;
+  align-items: center;
+}

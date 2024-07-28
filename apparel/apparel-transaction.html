@@ -288,7 +288,7 @@
                              	x-transition:enter="transition-all duration-700 ease-in-out"
                             	x-transition:enter-start="opacity-0"
                             	x-transition:enter-end="opacity-100">	
-								<div class="overflow-x-auto">
+								<!-- <div class="overflow-x-auto">
 									<table class="w-full mb-6 bg-card text-sm text-gray rounded-xl ItemsCheckboxSec" id="application-tbl1">
 										<thead class="">
 											<tr>
@@ -814,7 +814,439 @@
 											</tr>
 										</tbody>	
 									</table>	
+								</div> -->
+
+								<style>
+									.vertical_table table {
+										border-collapse: separate !important;
+									}
+									.vertical_table table th, .vertical_table table td {
+										height: 50px;
+						
+									}
+									.vertical_table table .vertical_table_title {
+										position: sticky;
+										left: 0;
+										z-index: 2;
+										background-color: white;
+										padding-left: 15px !important;
+										padding-right: 15px !important;
+										border-right: 1px solid #e6e6e6;
+										align-items: center;
+									}
+
+								</style>
+
+								<div class="overflow-x-auto mb-4 vertical_table">
+
+									<table class="w-full mb-2 bg-card text-sm text-gray rounded-xl ItemsCheckboxSec" id="application-tbl1">
+					
+										<tr>
+											<th class="pl-3.5 py-4 border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px]">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input checkAll" type="checkbox" value="" id="checkAll4">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="checkAll4">
+													</label>
+												</div>  
+											</th>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark tracking-[0.5px] text-start vertical_table_title">&nbsp;</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<div class="relative cursor-pointer" x-data="{ open: false }">
+													<div @click="open = true">
+														<a href="javascript:void(0);">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M11.0005 12C11.0005 12.5523 11.4482 13 12.0005 13C12.5528 13 13.0005 12.5523 13.0005 12C13.0005 11.4477 12.5528 11 12.0005 11C11.4482 11 11.0005 11.4477 11.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M18.0005 12C18.0005 12.5523 18.4482 13 19.0005 13C19.5528 13 20.0005 12.5523 20.0005 12C20.0005 11.4477 19.5528 11 19.0005 11C18.4482 11 18.0005 11.4477 18.0005 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M4.00049 12C4.00049 12.5523 4.4482 13 5.00049 13C5.55277 13 6.00049 12.5523 6.00049 12C6.00049 11.4477 5.55277 11 5.00049 11C4.4482 11 4.00049 11.4477 4.00049 12Z" stroke="var(--text-gray)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+														</a>
+													</div>
+													<div class="absolute z-[9] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] dark:shadow-[0rem_2rem_2.5rem_0rem_rgba(0,0,0,0.4)] min-w-[10rem] py-2 top-full ltr:right-0 rtl:left-0 translate-y-1 rounded-lg bg-card" x-transition.duration.300ms="" x-show.transition.origin.top.right="open" @click.away="open = false">
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-check-circle ltr:mr-1 rtl:ml-1 text-success"></i>Pending</a>
+														<a class="dropdown-item block text-left w-full py-2 px-6 text-dark duration-300 hover:bg-bs-dropdown-color" href="javascript:void(0);"><i class="far fa-times-circle ltr:mr-1 rtl:ml-1 text-danger"></i>On-Hold</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark tracking-[0.5px] text-start vertical_table_title">Order ID</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">#000123456</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Date Applied</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">Nov 21th 2020 09:21 AM</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Company</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center ">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#3a1a87"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Kripton Inc.</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#48c290"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Bubbles Studios</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#2769ee"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Bubbles Studios</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#2769ee"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Bubbles Studios</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center ">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#3a1a87"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Kripton Inc.</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#48c290"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Bubbles Studios</h6>
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center ">
+													<div class="size-[2.4rem] ltr:mr-2 rtl:ml-2">
+														<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+															<g  transform="translate(0.243)">
+																<rect  width="53" height="53" rx="12" transform="translate(-0.243)" fill="#c5c5c5"/>
+																<g  transform="translate(-0.243)">
+																	<rect  data-name="placeholder" width="53" height="53" rx="12" fill="#3a1a87"/>
+																	<ellipse  data-name="Ellipse 12" cx="13.243" cy="13.43" rx="13.243" ry="13.43" transform="translate(11.152 14.922)" fill="#fff"/>
+																	<ellipse  data-name="Ellipse 11" cx="8.016" cy="8.207" rx="8.016" ry="8.207" transform="translate(27.183 11.191)" fill="#ffe70c" style="mix-blend-mode: multiply;isolation: isolate"/>
+																</g>
+															</g>
+														</svg>
+													</div>
+													<h6>Kripton Inc.</h6>
+												</div>
+											</td>
+										</tr>
+										
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Type</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">FULLTIME</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Position</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">UI Designer</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Contact</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border whitespace-nowrap">
+												<div class="flex items-center text-secondary">
+													<i class="fas fa-phone-alt ltr:mr-2 rtl:ml-2"></i>
+													012 3123412 441
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="sm:py-[.85rem] sm:pr-[15px] py-2 pr-[5px] pl-3.5 border-b border-border tbl-bx">
+												<div class="form-check ltr:pl-6 rtl:pr-6 ltr:ml-2 rtl:mr-2">
+													<input class="form-check-input" type="checkbox" value="" id="customCheckBox">
+													<label class="ltr:ml-[0.313rem] rtl:mr-[0.313rem] mt-[0.113rem]" for="customCheckBox">
+													</label>
+												</div>
+											</td>
+											<th class="sm:py-[.85rem] sm:px-[15px] py-2 px-[5px] border-b border-border whitespace-nowrap font-medium text-dark border-border tracking-[0.5px] text-start vertical_table_title">Status</th>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-[#6e6e6e] bg-[#6e6e6e26]">PENDING</span>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border"><span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-secondary bg-[#d9f6f3]">ON HOLD</span></td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border"><span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-danger bg-danger-light">FULFILLED</span></td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-[#6e6e6e] bg-[#6e6e6e26]">PENDING</span>
+											</td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border"><span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-secondary bg-[#d9f6f3]">ON HOLD</span></td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border"><span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-danger bg-danger-light">FULFILLED</span></td>
+											<td class="sm:py-[.85rem] sm:px-[15px] py-2 px-6 border-b border-border">
+												<span class="py-[0.1875rem] px-[0.8125rem] text-[11px] font-semibold border border-transparent rounded-2xl text-[#6e6e6e] bg-[#6e6e6e26]">PENDING</span>
+											</td>
+										</tr>
+
+									</table>	
 								</div>
+								
 							</div>
 
 						</div>
