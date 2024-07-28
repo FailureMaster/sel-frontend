@@ -12589,6 +12589,24 @@ div.dt-buttons {
   }
 }
 
+.horizontal_table {
+  display: block; /* Hide by default */
+}
+
+.vertical_table {
+  display: none; /* Show by default */
+}
+
+@media (max-width: 768px) {
+  .horizontal_table {
+      display: none !important; /* Show on desktop */
+  }
+  
+  .vertical_table {
+      display: block !important; /* Hide on desktop */
+  }
+}
+
 .vertical_table table {
   border-collapse: separate !important;
 }
