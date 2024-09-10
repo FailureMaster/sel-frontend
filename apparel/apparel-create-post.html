@@ -308,41 +308,72 @@
 											</div>
 										</div>
 
-										<span class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
-											<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
-												<i class="fa-solid fa-upload"></i>
-											</span>
-											Upload Design Print
-										</span>
-					
-										<span class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
-											<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
-												<i class="fa-solid fa-upload"></i>
-											</span>
-											Upload Mockup
-										</span>
-
-										<span class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
-											<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
-												<i class="fa-solid fa-upload"></i>
-											</span>
-											Upload Hardware Details
-										</span>
-
-										<span class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
-											<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
-												<i class="fa-solid fa-upload"></i>
-											</span>
-											Upload Branding
-										</span>
-
-										<div class="inline-block">
+										<div class="inline-block mb-2">
 											<select class="nice-select mb-2 inline-block rounded-xl shadow font-medium py-4 px-8 mr-4 border border-border text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
 												<option value="Kind of Product">Stitching Details</option>
 												<option value="2">Sample</option>
 											</select>
 										</div>
 
+										<div class="flex flex-wrap items-start">
+
+											<div class="inline-block mb-2">
+												<span id="apparel_post_design_print" class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
+													<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
+														<i class="fa-solid fa-upload"></i>
+													</span>
+													Upload Design Print
+												</span>
+										
+												<div class="row px-4 w-full" id="apparel_post_design_print_list">
+													<!-- Content for apparel_post_design_print_list -->
+												</div>
+											</div>
+										
+											<div class="inline-block mb-2">
+												<span id="apparel_post_mockup" class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
+													<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
+														<i class="fa-solid fa-upload"></i>
+													</span>
+													Upload Mockup
+												</span>
+										
+												<div class="row px-4 w-full" id="apparel_post_mockup_list">
+													<!-- Content for apparel_post_mockup_list -->
+												</div>
+											</div>
+
+											<div class="inline-block mb-2">
+												<span id="apparel_hardware_details" class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
+													<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
+														<i class="fa-solid fa-upload"></i>
+													</span>
+													Upload Hardware Details
+												</span>
+
+												<div class="row px-4 w-full" id="apparel_hardware_details_list">
+													<!-- Content for apparel_hardware_details_list -->
+												</div>
+		
+											</div>
+
+											<div class="inline-block mb-2">
+												<span id="apparel_branding" class="mb-4 inline-block bg-primary-light rounded-xl shadow font-medium py-4 px-8 mr-4 border border-dashed border-primary text-[#6e6e6e] hover:bg-[#e8e8e8] hover:text-black duration-300 grow">
+													<span class="text-white -my-2-cus ltr:mr-2 py-1 px-2 ltr:float-left inline-block rounded-full bg-primary">
+														<i class="fa-solid fa-upload"></i>
+													</span>
+													Upload Branding
+												</span>		
+
+												<div class="row px-4 w-full" id="apparel_branding_list">
+													<!-- Content for apparel_upload_branding_list -->
+												</div>
+		
+											</div>
+										</div>
+					
+			
+									
 									</div>
 
 									<div class="absolute top-0 right-0 p-3">
@@ -400,6 +431,9 @@
 	<script src="assets/js/dlabnav-init.js"></script>
 	<script src="assets/js/custom.min.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
 	<script>
 		document.getElementById('colorPicker').addEventListener('input', function() {
 			const selectedColor = this.value;
@@ -412,6 +446,180 @@
 			colorContainer.style.backgroundColor = selectedColor;
 			colorContainer.style.color = selectedColor; 
 		});
+	</script>
+
+	<script>
+
+		let apparelPostDesignPrintPhotos = new Dropzone("#apparel_post_design_print", {
+			url: "/",
+			autoProcessQueue: false,
+			previewsContainer: false,
+			init: function () {
+				this.on("addedfile", function(file) {
+
+					console.log(file);
+
+					// Generate a unique identifier
+					let uniqueId = file.name + '-' + Math.random().toString(36).substr(2, 9);
+
+					// Extract file name and size
+					let fileName = file.name;
+					let fileThumbnail = URL.createObjectURL(file); // Create a temporary URL for the image preview
+
+					// Create a new div element with the file info
+					let newFileDiv = `
+						<div class="lg-item mb-1 px-1 relative" style="width:60px;" data-id="${uniqueId}">
+							<img src="${fileThumbnail}" alt="${file.name}" class="w-full rounded-md shadow" style="height:50px;" />
+
+							<!-- Close Button -->
+							<button class="absolute rounded-md text-white hover:bg-red-600 remove-file" style="top:2px;right:8px;">
+								<i class="fa fa-close" style="font-size:18px;color:white;"></i>
+							</button>
+						</div>
+					`;
+
+					$("#apparel_post_design_print_list").append(newFileDiv);
+				});
+
+				// Delegate event listener for removing file
+				$(document).on('click', '.remove-file', function () {
+					let parentDiv = $(this).closest('[data-id]');
+					parentDiv.remove();
+				});
+			},
+			// clickable: ".clickable_manufacturer_factory_photos",
+		});
+		$("#apparel_post_design_print_list").sortable();
+
+
+
+		let apparelPostDesignPrint = new Dropzone("#apparel_post_mockup", {
+			url: "/",
+			autoProcessQueue: false,
+			previewsContainer: false,
+			init: function () {
+				this.on("addedfile", function(file) {
+
+					console.log(file);
+
+					// Generate a unique identifier
+					let uniqueId = file.name + '-' + Math.random().toString(36).substr(2, 9);
+
+					// Extract file name and size
+					let fileName = file.name;
+					let fileThumbnail = URL.createObjectURL(file); // Create a temporary URL for the image preview
+
+					// Create a new div element with the file info
+					let newFileDiv = `
+						<div class="lg-item mb-1 px-1 relative" style="width:60px;" data-id="${uniqueId}">
+							<img src="${fileThumbnail}" alt="${file.name}" class="w-full rounded-md shadow" style="height:50px;" />
+
+							<!-- Close Button -->
+							<button class="absolute rounded-md text-white hover:bg-red-600 remove-file" style="top:2px;right:8px;">
+								<i class="fa fa-close" style="font-size:18px;color:white;"></i>
+							</button>
+						</div>
+					`;
+
+					$("#apparel_post_mockup_list").append(newFileDiv);
+				});
+
+				// Delegate event listener for removing file
+				$(document).on('click', '.remove-file', function () {
+					let parentDiv = $(this).closest('[data-id]');
+					parentDiv.remove();
+				});
+			},
+			// clickable: ".clickable_manufacturer_factory_photos",
+		});
+		$("#apparel_post_mockup_list").sortable();
+
+
+
+		let apparelPostHardwareDetails = new Dropzone("#apparel_hardware_details", {
+			url: "/",
+			autoProcessQueue: false,
+			previewsContainer: false,
+			init: function () {
+				this.on("addedfile", function(file) {
+
+					console.log(file);
+
+					// Generate a unique identifier
+					let uniqueId = file.name + '-' + Math.random().toString(36).substr(2, 9);
+
+					// Extract file name and size
+					let fileName = file.name;
+					let fileThumbnail = URL.createObjectURL(file); // Create a temporary URL for the image preview
+
+					// Create a new div element with the file info
+					let newFileDiv = `
+						<div class="lg-item mb-1 px-1 relative" style="width:60px;" data-id="${uniqueId}">
+							<img src="${fileThumbnail}" alt="${file.name}" class="w-full rounded-md shadow" style="height:50px;" />
+
+							<!-- Close Button -->
+							<button class="absolute rounded-md text-white hover:bg-red-600 remove-file" style="top:2px;right:8px;">
+								<i class="fa fa-close" style="font-size:18px;color:white;"></i>
+							</button>
+						</div>
+					`;
+
+					$("#apparel_hardware_details_list").append(newFileDiv);
+				});
+
+				// Delegate event listener for removing file
+				$(document).on('click', '.remove-file', function () {
+					let parentDiv = $(this).closest('[data-id]');
+					parentDiv.remove();
+				});
+			},
+			// clickable: ".clickable_manufacturer_factory_photos",
+		});
+		$("#apparel_hardware_details_list").sortable();
+
+
+
+		let apparelPostBranding = new Dropzone("#apparel_branding", {
+			url: "/",
+			autoProcessQueue: false,
+			previewsContainer: false,
+			init: function () {
+				this.on("addedfile", function(file) {
+
+					console.log(file);
+
+					// Generate a unique identifier
+					let uniqueId = file.name + '-' + Math.random().toString(36).substr(2, 9);
+
+					// Extract file name and size
+					let fileName = file.name;
+					let fileThumbnail = URL.createObjectURL(file); // Create a temporary URL for the image preview
+
+					// Create a new div element with the file info
+					let newFileDiv = `
+						<div class="lg-item mb-1 px-1 relative" style="width:60px;" data-id="${uniqueId}">
+							<img src="${fileThumbnail}" alt="${file.name}" class="w-full rounded-md shadow" style="height:50px;" />
+
+							<!-- Close Button -->
+							<button class="absolute rounded-md text-white hover:bg-red-600 remove-file" style="top:2px;right:8px;">
+								<i class="fa fa-close" style="font-size:18px;color:white;"></i>
+							</button>
+						</div>
+					`;
+
+					$("#apparel_branding_list").append(newFileDiv);
+				});
+
+				// Delegate event listener for removing file
+				$(document).on('click', '.remove-file', function () {
+					let parentDiv = $(this).closest('[data-id]');
+					parentDiv.remove();
+				});
+			},
+			// clickable: ".clickable_manufacturer_factory_photos",
+		});
+		$("#apparel_branding_list").sortable();
+
 	</script>
 
 </body>
