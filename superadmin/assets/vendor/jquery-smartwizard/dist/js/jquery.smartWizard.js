@@ -94,7 +94,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       // Add done state on navigation
       markAllPreviousStepsAsDone: true,
       // When a step selected by url hash, all previous steps are marked done
-      removeDoneStepOnNavigateBack: false,
+      removeDoneStepOnNavigateBack: true,
       // While navigate back done step after active step will be cleared
       enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
 
